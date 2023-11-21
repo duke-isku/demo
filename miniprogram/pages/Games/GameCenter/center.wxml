@@ -1,0 +1,37 @@
+<!--pages/Games/GameCenter/center.wxml-->
+<view class="container">
+    <van-button color="#7232dd" bind:click="showPopup" round class="button">害你在心口难开</van-button>
+    <van-button color="#7232dd" round class="button">其它游戏</van-button>
+    <van-popup   
+    show="{{ show }}"
+    position="bottom"
+    round
+    custom-style="height: 20%;"
+    bind:close="onClose">
+        <!-- <van-grid clickable column-num="2">
+            <van-grid-item icon="home-o">
+                <van-button color="#7232dd" round bind:click="createRoom">创建房间</van-button>
+            </van-grid-item>
+            <van-grid-item icon="home-o">
+                <van-button color="#7232dd" round plain bind:click="joinRoom">加入房间</van-button>
+            </van-grid-item>
+        </van-grid> -->
+        <van-row>
+            <van-col span="12">
+                <view class="row">
+                    <van-button color="#7232dd" round bind:click="createRoom">
+                        创建房间
+                    </van-button>
+                </view>
+            </van-col>
+            <van-col span="12">
+                <view class="row">
+                    <van-button color="#7232dd" round plain bind:click="joinRoom">
+                        加入房间
+                    </van-button>
+                </view>
+            </van-col>
+        </van-row>
+    </van-popup>
+
+</view>

@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "van-config-provider": "@vant/weapp/config-provider/index"
+      }
+}

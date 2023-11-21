@@ -1,0 +1,13 @@
+<!--pages/Games/Room/room.wxml-->
+<view class="view">
+    <van-row class="van-cell">
+        <van-col span="12" class="van-cell__title">
+        <span>人数</span>
+        </van-col>
+        <van-col span="12" class="van-cell__value">
+            <van-stepper value="{{ 5 }}" min="5" max="20"/>
+        </van-col>
+    </van-row>
+    
+</view>
+
